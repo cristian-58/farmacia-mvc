@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmacia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet"  href="css/estilo.css">
+    <script src="js/validar.js"></script>
+
+</head>
+
+<body background="img/cafe.jpg">
+    
+    <div>
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="">
+        </div>
+    </div>
+        
+    <form action="../app/controllers/Ingresar2.php" method="post" class="formulario"  onsubmit="return validar();">
+    
+    <h1><font color="#ffffff"><b></b>Inicio de Sesion<font></b></h1> 
+    <h3><font color="#ffffff"><b><i>Cristhian-la-Rebaja<font></i></b></h3>     
+    <br>
+
+    <label for="" class="formulariolabel">Correo electrónico</label>
+    <input type="text" id="correo"class ="formularioinput" name=correo >
+    <br>
+    <label for="" class="formulariolabel">Contraseña</label>
+    <input type="password" id="contrasena" class ="formularioinput" name="contrasena" >
+    <br><br>
+    <label for="" class="formulariolabel"></label>
+    <input type="submit" class="submit" value="Ingresar" >
+
+    </form>
+      
+    <br><br>
+      
+</body>
+</html>

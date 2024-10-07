@@ -1,0 +1,9 @@
+# Habilitar la reescritura de URL
+RewriteEngine On
+
+# Evitar bucles infinitos
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir todas las solicitudes a index.php
+RewriteRule ^(.*)$ index.html [L,QSA]
